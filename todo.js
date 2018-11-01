@@ -45,7 +45,7 @@ var createNewTaskElement=function(taskString){
 
 
 
-var addTask=function(){
+addButton.onclick= function(){
     console.log("Add Task...");
     //Create a new list item with the text from the #new-task:
     var listItem=createNewTaskElement(taskInput.value);
@@ -56,7 +56,7 @@ var addTask=function(){
 
     taskInput.value="";
 
-}
+};
 
 //Edit an existing task.
 
@@ -131,9 +131,6 @@ var ajaxRequest=function(){
 
 
 //Set the click handler to the addTask function.
-addButton.onclick=addTask;
-addButton.addEventListener("click",addTask);
-addButton.addEventListener("click",ajaxRequest);
 
 
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
