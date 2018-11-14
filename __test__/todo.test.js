@@ -1,17 +1,4 @@
-//const{createNewTastElement, addButton, editTask} = require("todo.js")
-/*test("editing Task", () => {
-    taskInput.value = "example";
-    var listItem = createNewTastElement(taskInput.value);
-    //Append listItem to incompleteTaskHolder
-    incompleteTaskHolder.appendChild(listItem);
-    bindTaskEvents(listItem, taskCompleted);
-    taskInput.value="";
-    this.parentNode = listItem;
-    editTask();
-    expect(listItem.classList.toString(),"kek")
-})*/
 'use strict';
-//import { createNewTaskElement } from '../todo.js';
 test("Add Task Test", () =>{
     document.body.innerHTML =
         '<p>' +
