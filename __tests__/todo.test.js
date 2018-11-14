@@ -1,8 +1,8 @@
 var $ = require('jquery')
 var html = require('fs').readFileSync('./todo.html').toString()
+const testInput = 'Task_1'
 
 test('Adding Task', () => {
-  const testInput = 'Task_1'
   document.documentElement.innerHTML = html
   const { addButton } = require('../todo.js')
 
@@ -24,7 +24,6 @@ test('Adding Task', () => {
 })
 
 test('Deleting Task', () => {
-  const testInput = 'Task_1'
   document.documentElement.innerHTML = html
   const { addButton } = require('../todo.js')
 
@@ -48,7 +47,6 @@ test('Deleting Task', () => {
 })
 
 test('Edit Task', () => {
-  const testInput = 'Task_1'
   document.documentElement.innerHTML = html
   const { addButton } = require('../todo.js')
 
