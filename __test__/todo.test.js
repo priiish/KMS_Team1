@@ -11,14 +11,13 @@ test("Add new task", () => {
         '<ul id="completed-tasks">\n' +
         '</ul>\n';
 
-    const createNewTaskElement = require("../todo.js");
-    const addButton = require("../todo.js");
+    require ('../todo');
     const $ = require('jquery');
-    var taskInput=document.getElementById("new-task");
+    const taskInput=document.getElementById("new-task");
 
     jest.mock('../todo');
 
-    taskInput.value = "New_Task";
+    taskInput.value = "New Task";
     $('#addButton').click();
     expect(taskInput.value).toBe("");
     expect($('#incomplete-tasks').children().length).toBe(1);

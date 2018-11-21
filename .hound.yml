@@ -1,0 +1,3 @@
+fail_on_violations: false
+jshint:
+  enabled: true
