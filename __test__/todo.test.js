@@ -27,7 +27,7 @@ test("Add new task", () => {
 
 });
 
-test("Mark task as completed", () => {
+/*test("Mark task as completed", () => {
     document.body.innerHTML =
         '<p>' +
         '<label for="new-task">Add Item</label><input id="new-task" type="text"><button id="addButton">Add</button>' +
@@ -43,4 +43,4 @@ test("Mark task as completed", () => {
 
     jest.mock('../todo');
 
-});
+});*/
