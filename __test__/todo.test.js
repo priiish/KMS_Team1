@@ -1,4 +1,6 @@
-'use strict';
+require ('jest');
+$ = require('jquery');
+
 test("Add Task Test", () =>{
     document.body.innerHTML =
         '<p>' +

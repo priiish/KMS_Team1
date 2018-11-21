@@ -1,12 +1,14 @@
-var taskInput=document.getElementById("new-task");//Add a new task.
-var addButton=document.getElementsByTagName("button")[0];//first button
+$ = require('jquery');
+
+var taskInput=document.getElementById("new-task");
+var addButton= $('#addbutton');
 var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incomplete-tasks
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 
 //New task list item
 
-var createNewTaskElement_1=function(taskString){
+/*function createNewTaskElement(taskString) {
 
     var listItem=document.createElement("li");
 
@@ -42,7 +44,8 @@ var createNewTaskElement_1=function(taskString){
     listItem.appendChild(editButton);
     listItem.appendChild(deleteButton);
     return listItem;
-}
+}*/
+
 function createNewTaskElement (taskString){
 
     var listItem=document.createElement("li");
@@ -70,8 +73,6 @@ function createNewTaskElement (taskString){
     deleteButton.innerText="Delete";
     deleteButton.className="delete";
 
-
-
     //and appending.
     listItem.appendChild(checkBox);
     listItem.appendChild(label);
@@ -80,7 +81,6 @@ function createNewTaskElement (taskString){
     listItem.appendChild(deleteButton);
     return listItem;
 }
-
 
 
 addButton.onclick= function(){
@@ -97,7 +97,7 @@ addButton.onclick= function(){
 
 //Edit an existing task.
 
-var editTask=function(){
+function editTask() {
     console.log("Edit Task...");
     console.log("Change 'edit' to 'save'");
 
@@ -122,10 +122,8 @@ var editTask=function(){
 }
 
 
-
-
 //Delete task.
-var deleteTask=function(){
+function deleteTask() {
     console.log("Delete Task...");
 
     var listItem=this.parentNode;
@@ -137,7 +135,7 @@ var deleteTask=function(){
 
 
 //Mark task completed
-var taskCompleted=function(){
+function taskCompleted(){
     console.log("Complete Task...");
 
     //Append the task list item to the #completed-tasks
@@ -148,7 +146,7 @@ var taskCompleted=function(){
 }
 
 
-var taskIncomplete=function(){
+function taskIncomplete() {
     console.log("Incomplete Task...");
 //Mark task as incomplete.
     //When the checkbox is unchecked
@@ -159,18 +157,7 @@ var taskIncomplete=function(){
 }
 
 
-
-var ajaxRequest=function(){
-    console.log("AJAX Request");
-}
-
-//The glue to hold it all together.
-
-
-//Set the click handler to the addTask function.
-
-
-var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
+function bindTaskEvents (taskListItem,checkBoxEventHandler) {
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
@@ -203,11 +190,3 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
 
-
-
-
-// Issues with usabiliy don't get seen until they are in front of a human tester.
-
-//prevent creation of empty tasks.
-
-//Shange edit to save when you are in edit mode.
