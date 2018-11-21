@@ -1,7 +1,7 @@
 $ = require('jquery');
 
 var taskInput=document.getElementById("new-task");
-var addButton= $('#addbutton');
+var addButton = document.getElementById("addButton");
 var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incomplete-tasks
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
@@ -84,7 +84,7 @@ function createNewTaskElement (taskString){
 
 
 addButton.onclick= function(){
-    console.log("Add Task...");
+    console.log("New Task being added");
     //Create a new list item with the text from the #new-task:
     var listItem=createNewTaskElement(taskInput.value);
 
@@ -98,9 +98,8 @@ addButton.onclick= function(){
 //Edit an existing task.
 
 function editTask() {
-    console.log("Edit Task...");
-    console.log("Change 'edit' to 'save'");
-
+    console.log("Task being edited");
+    //console.log("Change 'edit' to 'save'");
 
     var listItem=this.parentNode;
 
@@ -136,7 +135,7 @@ function deleteTask() {
 
 //Mark task completed
 function taskCompleted(){
-    console.log("Complete Task...");
+    console.log("Task marked as completed");
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
@@ -158,7 +157,7 @@ function taskIncomplete() {
 
 
 function bindTaskEvents (taskListItem,checkBoxEventHandler) {
-    console.log("bind list item events");
+    console.log("Task being binded onto list");
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
     var editButton=taskListItem.querySelector("button.edit");
