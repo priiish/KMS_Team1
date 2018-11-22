@@ -16,7 +16,7 @@ test('Add new task', () => {
     const $ = require('jquery');
     const taskInput=document.getElementById("new-task");
 
-    jest.mock('../todo');
+    //jest.mock('../todo');
 
     taskInput.value = "New Task";
     $('#addButton').click();
