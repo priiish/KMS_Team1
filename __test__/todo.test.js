@@ -38,7 +38,7 @@ test('Add new task', () => {
 
     const $ = require('jquery');
     var deleteButton=taskListItem.querySelector("button.delete");
-     /* expect($('#incomplete-tasks').children().children()[1].innerText).toBe("Test");*/
+     /* expect($('#incomplete-tasks').children().children()[1].innerText).toBe("Test");
 
     jest.mock('../todo');
 
