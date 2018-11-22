@@ -15,6 +15,9 @@
   "jshintConfig": {
     "undef": false,
     "unused": false,
-    "esversion":6
+    "esversion":6,
+    "curly": true,
+    "quotmark": "double",
+    "jquery": true
   }
 }
