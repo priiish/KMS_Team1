@@ -1,7 +1,7 @@
 require ('jest');
 
 
-test("Add new task", () => {
+test('Add new task', () => {
     document.body.innerHTML =
         '<p>' +
         '<label for="new-task">Add Item</label><input id="new-task" type="text"><button id="addButton">Add</button>' +

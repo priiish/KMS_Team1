@@ -17,7 +17,7 @@
     "unused": false,
     "esversion":6,
     "curly": true,
-    "quotmark": "double",
+    "quotmark": "single",
     "jquery": true
   }
 }
