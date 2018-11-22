@@ -19,7 +19,7 @@ test('Add new task', () => {
     //jest.mock('../todo');
 
     taskInput.value = "New Task";
-    //$('#addButton').click();
+    $('#addButton').click();
     expect(taskInput.value).toBe("");
     expect($('#incomplete-tasks').children().length).toBe(1);
 

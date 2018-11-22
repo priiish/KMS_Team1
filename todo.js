@@ -1,4 +1,3 @@
-$ = require('jquery');
 
 var taskInput=document.getElementById("new-task");
 var addButton = document.getElementById("addButton");
@@ -83,7 +82,7 @@ function createNewTaskElement (taskString){
 }
 
 
-addButton.onclick= function(){
+addButton.onclick = function(){
     console.log("New Task being added");
     //Create a new list item with the text from the #new-task:
     var listItem=createNewTaskElement(taskInput.value);
