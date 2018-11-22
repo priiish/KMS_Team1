@@ -23,8 +23,6 @@ test('Add new task', () => {
     expect(taskInput.value).toBe("");
     expect($('#incomplete-tasks').children().length).toBe(1);
 
-    /* expect($('#incomplete-tasks').children().children()[1].innerText).toBe("Test");*/
-
 });
 
 /*test("Mark task as completed", () => {
@@ -40,6 +38,7 @@ test('Add new task', () => {
 
     const $ = require('jquery');
     var deleteButton=taskListItem.querySelector("button.delete");
+     /* expect($('#incomplete-tasks').children().children()[1].innerText).toBe("Test");*/
 
     jest.mock('../todo');
 
