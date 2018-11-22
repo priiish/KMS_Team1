@@ -11,5 +11,10 @@
   },
   "devDependencies": {
     "jest": "^23.6.0"
+  },
+  "jshintConfig": {
+    "undef": false,
+    "unused": false,
+    "esversion":6
   }
 }
