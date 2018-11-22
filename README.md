@@ -1,6 +1,7 @@
 # KMS_Team1
 KMS Project ToDoList
 # Link to Deployment Page: https://priiish.github.io/KMS_Team1/
+(helpful doc for Github Pages: https://www.thinkful.com/learn/a-guide-to-using-github-pages/start/existing-project/project-page/existing-repo/)
 
 ## To Do List
 
