@@ -8,6 +8,9 @@ This project consists of a To Do List which makes it possible to add entries to 
 
 ### Project Structure
 Language: Javascript
+
 Frameworks: Jest (Tests), JQuery
+
 CI-Service: Travis CI
+
 Linter / Code Style: JSHint, Hound CI
