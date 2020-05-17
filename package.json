@@ -13,11 +13,13 @@
     "jest": "^23.6.0"
   },
   "jshintConfig": {
-    "undef": false,
-    "unused": false,
-    "esversion":6,
+    "undef": true,
+    "unused": true,
+    "esversion": 6,
     "curly": true,
     "quotmark": "single",
-    "jquery": true
+    "jquery": true,
+    "maxdepth": true
+
   }
 }
