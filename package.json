@@ -14,7 +14,7 @@
   },
   "jshintConfig": {
     "undef": true,
-    "unused": false,
+    "unused": true,
     "esversion": 6,
     "curly": true,
     "quotmark": "single",
