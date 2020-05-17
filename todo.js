@@ -86,7 +86,6 @@ addButton.onclick = function(){
     console.log("New Task being added");
     //Create a new list item with the text from the #new-task:
     var listItem=createNewTaskElement(taskInput.value);
-
     //Append listItem to incompleteTaskHolder
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
@@ -179,12 +178,14 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
    bindTaskEvents(incompleteTaskHolder.children[i],taskCompleted);
 }
 
-
-
-
 //cycle over completedTasksHolder ul list items
 for (var i=0; i<completedTasksHolder.children.length;i++){
     //bind events to list items chldren(tasksIncompleted)
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
 
+// Demo function
+function sayHello() {
+    let world = "world";           // no single quotes
+    console.log("Hello" + World); // undefined variable
+}
