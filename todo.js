@@ -186,6 +186,7 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
 
 // Demo function
 function sayHello() {
-    let world = "world";           // no single quotes
+    let world = "world";// no single quotes
+    if (1 == 1)         //
     console.log("Hello" + World); // undefined variable
 }
