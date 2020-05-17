@@ -1,8 +1,8 @@
 {
   "curly": true,
   "eqeqeq": true,
-  "latedef": false,
-  "plusplus": false,
+  "latedef": true,
+  "plusplus": true,
   "quotmark": "single",
   "undef": true,
   "unused": true
