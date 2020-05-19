@@ -188,8 +188,8 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
 // Demo function
 function sayHello() {
     const helloArray = ['H', 'e', 'l', 'l', 'o'];
-    let hello = '';
-    const world = 'world';
+    let hello = " ";
+    const world = "world";
 
     for (i = 0; i < helloArray.length; i++)
         hello = hello + helloArray[i];
