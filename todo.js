@@ -194,6 +194,6 @@ function sayHello() {
     for (i = 0; i < helloArray.length; i++)
         hello = hello + helloArray[i];
 
-    if (1 == 1)
+    if (1 === 1)
         console.log(hello + World);
 }
