@@ -5,5 +5,5 @@
   "plusplus": true,
   "quotmark": "single",
   "undef": true,
-  "unused": false
+  "unused": true
 }
