@@ -91,6 +91,7 @@ addButton.onclick = function(){
     bindTaskEvents(listItem, taskCompleted);
 
     taskInput.value='';
+    sayHello();
 };
 
 //Edit an existing task.
@@ -186,7 +187,13 @@ for (var i=0; i<completedTasksHolder.children.length;i++){
 
 // Demo function
 function sayHello() {
-    var world = "world";           // no single quotes
-    if (1 == 1)         //
-    console.log("Hello" + World); // undefined variable
+    const helloArray = ['H', 'e', 'l', 'l', 'o'];
+    let hello = " ";
+    const world = "world";
+
+    for (i = 0; i < helloArray.length; i++)
+        hello = hello + helloArray[i];
+
+    if (1 === 1)
+        console.log(hello + World);
 }
