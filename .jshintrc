@@ -4,6 +4,6 @@
   "latedef": true,
   "plusplus": true,
   "quotmark": "single",
-  "undef": true,
+  "undef": false,
   "unused": true
 }
